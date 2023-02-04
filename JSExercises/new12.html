@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        // Bind, Call, Apply
+
+        let Objt = {
+            'key1':'abc',
+            'key2': 2,
+            'key3':function(a,b){
+                // return this.key1 +' '+ this.key2 + ' ' + a + ' ' + b;
+                return `${this.key1} ${this.key2} ${a} ${b} word`;
+            }
+        }
+        
+        let Objt2 = {
+            'key1': 'dce',
+            'key2': 5
+        }
+
+
+        let Objtv = Objt.key3.apply(Objt2,[6,8]);
+
+        // let Objt2int = new Objt2();
+
+        // let Objtint = new Objt(Objt2int);
+
+
+
+        console.log(Objtv); 
+
+
+
+
+    </script>
+</head>
+
+</html>

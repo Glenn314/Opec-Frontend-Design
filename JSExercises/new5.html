@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script>
+        // Randomly add elements to an array
+
+        const Ritems = [];
+        const items = ['table', 'chair', 'desk', 'bottle', 'pen', 'pencil'];
+
+        while (items.length) {
+            Ritems.splice(Math.floor(Math.random() * (Ritems.length + 1)), 0, items.pop());
+        }
+
+        console.log(Ritems);
+
+    </script>
+</head>
+
+</html>

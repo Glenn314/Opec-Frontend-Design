@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script>
+
+        let obj = {
+            "key1": 123,
+            "key2": true,
+            "key3": `abc`
+        }
+
+
+        let arrObj = Object.entries(obj);
+
+        // arrObj[1].map((curVal)=> console.log(curVal));
+
+        console.log(arrObj);
+
+        // arrObj.map(function (curVal, index, arr){
+        //     for (i=0; i<2; i++){
+        //         console.log(arrObj[index][i]);
+        //     }
+        // })
+
+
+         arrObj.map(function(curVal,index,arr){
+             curVal.map(function(cuVal){
+                console.log(cuVal);
+             }
+             )
+         })
+
+        //  for (i = 0; i < 2; i++) {
+        //      for (j = 0; j < 2; j++) {
+        //          console.log(arrObj[i][j]);
+        //      }
+        //  }
+
+        
+
+    </script>
+</head>
+
+</html>

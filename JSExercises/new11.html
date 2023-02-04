@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        // Sorting Method 1
+
+        let arrN = [2, 9, 3, 7, 20, 5];
+
+        function cmp(a, b) {
+            return a < b ? -1 : a > 2 && a < 6 ? -1 : 0;
+        }
+
+        console.log(arrN.sort(cmp));
+
+
+        // Sorting Method 2
+
+        let arrN2 = [2, 9, 3, 7, 20, 5];
+
+        arrN2.sort((a,b)=>a-b);
+
+        let n = Math.ceil(arrN2.length/2);
+
+        let arrSplcd = arrN2.splice(0,n);
+
+        let arrSplcd2 = arrN2.splice(n,arrN2.length);
+        
+        arrSplcd.reverse();
+
+        let mrgdArr = [...arrSplcd,...arrN2];
+
+        console.log(mrgdArr);
+
+
+
+
+
+    </script>
+</head>
+
+</html>

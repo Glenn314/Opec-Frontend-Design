@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+    <script>
+        //Error Handling
+
+        let v1 = 5;
+        let v2 = 6;
+
+        let sum = () => v1 + v2;
+
+        try {
+            if (sum() === 11) {
+                throw {
+                    'name': 'abc',
+                    'message': '11 is an error' 
+                };
+
+            }
+            // sum();
+
+        }
+
+        catch (err) {
+            console.log(err);
+            console.log(err.name);
+            console.log(err.message);
+        }
+
+        finally {
+            console.log('Code Executed');
+        }
+
+    </script>
+
+</head>
+
+</html>
