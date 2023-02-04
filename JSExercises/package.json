@@ -2,11 +2,11 @@
   "name": "pckjsexc",
   "version": "1.0.0",
   "description": "jsexcprac",
-  "main": "new15.js", 
+  "main": "new15.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "sabir shikh",
+  "author": "Glenn Couto",
   "license": "ISC"
 }
